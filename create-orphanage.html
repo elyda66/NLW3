@@ -52,8 +52,8 @@
 
             <div class="map-container">
               <div id="mapid"></div>
-              <input type="hidden" name="lat">
-              <input type="hidden" name="lng">
+              <input type="hidden" name="lat" />
+              <input type="hidden" name="lng" />
 
               <footer>
                 <a href="#" id="select-point"
@@ -64,7 +64,7 @@
 
             <div class="input-block">
               <label for="name">Nome</label>
-              <input id="name" name="name" required/>
+              <input id="name" name="name" required />
             </div>
 
             <div class="input-block">
@@ -76,7 +76,7 @@
 
             <div class="input-block">
               <label for="whatsapp">Número de Whatsapp</label>
-              <input id="whatsapp" name="whatsapp" required/>
+              <input id="whatsapp" name="whatsapp" required />
             </div>
 
             <div class="input-block">
@@ -84,14 +84,22 @@
 
               <div class="images-upload" id="images">
                 <div class="new-upload">
-                  <input name="images" placeholder="Cole o link da foto aqui" required/>
-                  <span onclick = "deletefield(event)">
-                    <img src="./public/images/X-red.svg" alt="Remover foto">
+                  <input
+                    name="images"
+                    placeholder="Cole o link da foto aqui"
+                    required
+                  />
+                  <span onclick="deletefield(event)">
+                    <img src="./public/images/X-red.svg" alt="Remover foto" />
                   </span>
                 </div>
               </div>
 
-              <button onclick="addPhotoField()" type="button" id="images-button">
+              <button
+                onclick="addPhotoField()"
+                type="button"
+                id="images-button"
+              >
                 <img src="./public/images/add-file.svg" alt="Nova imagem" />
               </button>
             </div>
@@ -102,12 +110,16 @@
 
             <div class="input-block">
               <label for="instructions">Instruções</label>
-              <textarea id="instructions" name="instructions" required></textarea>
+              <textarea
+                id="instructions"
+                name="instructions"
+                required
+              ></textarea>
             </div>
 
             <div class="input-block">
               <label for="opening-hours">Horário das visitas</label>
-              <input id="opening-hours" name="opening-hours" required/>
+              <input id="opening-hours" name="opening-hours" required />
             </div>
 
             <div class="input-block">
@@ -120,9 +132,9 @@
                 required
               />
 
-              <div class="butto-select">
-                <button type="button" class="active">Sim</button>
-                <button type="button" class="">Não</button>
+              <div class="button-select">
+                <button data-value="1" onclick="togglerselect(event)" type="button" class="active">Sim</button>
+                <button data-value="0" onclick="togglerselect(event)" type="button">Não</button>
               </div>
 
               <button type="submit" class="primary-button">Confirmar</button>
